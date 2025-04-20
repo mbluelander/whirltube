@@ -16,6 +16,12 @@ If you would like to be able to run the program from anywhere, place wt.sh in on
 
 Make the program executable with `chmod +x wt.sh`. If you placed wt.sh in a path folder, simply open a terminal and type wt.sh. Your downloaded media will be stored in whatever folder you're currently in. Otherwise, navigate to the folder containing wt.sh and type `./wt.sh`. Choose your option, and paste the youtube (or other supported media) URL with `ctrl+shift+v` (may vary depending on your terminal emulator) and press enter. Tested and working on Debian 12 with bash 5.2.15.
 
+```
+wt.sh [url]
+```
+
+Will skip the menu and immediately download the media at [url] with the default settings.
+
 ### Changes
 
 * **1.0.1**
