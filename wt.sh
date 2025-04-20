@@ -7,7 +7,7 @@ sub=0		# 1 to download subtitles, 0 to leave off
 lang="en" 	# Subtitle language
 res=720 	# Default resolution. 480, 720, 1080, etc.
 form="Mp3" 	# Format for audio extraction. Mp3, Opus, Ogg, etc.
-###
+### END SETTINGS
 
 ans=0
 subu=("[x] no    [ ] yes" "[ ] no    [x] yes")
@@ -18,14 +18,14 @@ if [[ $1 > "" ]]; then
 fi
 while [[ $ans -lt 1 || $ans -gt 4 ]]; do
 	clear
-	echo "whirltube 1.1.0" 
+	echo "whirltube 1.1.1" 
 	echo
-	echo -n " 1. Download video [" && echo -n $res && echo "p]"
-	echo -n " 2. Extract audio [" && echo -n $form && echo "]"
+	echo " 1. Download video" 
+	echo " 2. Extract audio"
 	echo " 3. Play in VLC"
 	echo -n " 4. Download subtitles? " && echo "${subu[sub]}"
-	echo " 5. Change resolution"   
-	echo " 6. Change audio format"
+	echo -n " 5. Change resolution   [" && echo -n $res && echo "p]"
+	echo -n " 6. Change audio format [" && echo -n $form && echo "]"
 	echo " 9. Exit"
 	echo	
 	echo -n "Choice? "
