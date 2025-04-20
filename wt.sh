@@ -9,7 +9,7 @@ if [[ $1 > "" ]]; then
 fi
 while [[ $ans -lt 1 || $ans -gt 4 ]]; do
 	clear
-	echo "whirltube 1.0.3" 
+	echo "whirltube 1.0.4" 
 	echo
 	echo "1. Download video"
 	echo "2. Extract Mp3"
@@ -28,7 +28,7 @@ while [[ $ans -lt 1 || $ans -gt 4 ]]; do
 done
 
 echo && echo
-while [[ $url = "" ]]; do
+while [[ $url == "" ]]; do
 	echo -n "Enter URL: "
 	read -r url
 done
