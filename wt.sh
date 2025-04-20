@@ -33,10 +33,10 @@ while [[ $url == "" ]]; do
 	read -r url
 done
 if [[ $ans -eq 1 ]]; then
-	if [[ $sub = "[on]" ]]; then
+	if [[ $sub == "[on]" ]]; then
 		yt-dlp $url -S vcodec:h264,fps,res:720,acodec:m4a --write-sub --write-auto-sub --sub-lang "en.*"
 		exit
-	elif [[ $sub = "[off]" ]]; then
+	elif [[ $sub == "[off]" ]]; then
 		yt-dlp $url -S vcodec:h264,fps,res:720,acodec:m4a
 		exit
 	fi
