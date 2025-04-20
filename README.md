@@ -12,4 +12,8 @@ Make the program executable with `chmod +x wt.sh`. If you placed wt.sh in a path
 
 ### Changes
 
-* **1.0.1** whirltube will now download any available english subtitles for video.
+* **1.0.1**
+  * Whirltube will now download any available english subtitles for video.
+* **1.0.3**
+  * Downloading subtitles is now a configurable setting.
+  * Launching whirltube with a URL will now automatically start yt-dlp with the default download settings.
