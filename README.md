@@ -17,3 +17,5 @@ Make the program executable with `chmod +x wt.sh`. If you placed wt.sh in a path
 * **1.0.3**
   * Downloading subtitles is now a configurable setting.
   * Launching whirltube with a URL will now automatically start yt-dlp with the default download settings.
+* **1.0.4**
+   * Fixed bug with wrong equality symbol.
