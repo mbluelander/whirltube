@@ -1,6 +1,6 @@
 ### Whirltube
 
-Simple bash interface for interacting with [yt-dlp](https://github.com/yt-dlp/yt-dlp). Requires yt-dlp, ffmpeg and VLC.
+Simple bash interface for interacting with [yt-dlp](https://github.com/yt-dlp/yt-dlp). Also requires [ffmpeg](https://github.com/FFmpeg/FFmpeg) and optionally [vlc](https://github.com/videolan/vlc) to enable streaming.
 
 ![screenshpt](https://imgur.com/YoAlePt.png)
 
