@@ -14,6 +14,9 @@ wget https://raw.githubusercontent.com/mbluelander/whirltube/refs/heads/main/wt.
 
 If you would like to be able to run the program from anywhere, place wt.sh in one of your system's "PATH" folders. An example on Debian would be `/home/[username]/.local/bin/`. For a list of folders in your system's PATH, open a command line and type `echo $PATH`. 
 
+>[!NOTE]
+>wt.sh must be in the same folder as yt-dlp, or yt-dlp must be in your system's `$PATH` to use whirltube.
+
 Make the program executable with `chmod +x wt.sh`. If you placed wt.sh in a path folder, simply open a terminal and type wt.sh. Your downloaded media will be stored in whatever folder you're currently in. Otherwise, navigate to the folder containing wt.sh and type `./wt.sh`. Choose your option, and paste the youtube (or other supported media) URL with `ctrl+shift+v` (may vary depending on your terminal emulator) and press enter.
 
 Option 4 toggles downloading of subtitles. To set this option to always on, change the default settings.
