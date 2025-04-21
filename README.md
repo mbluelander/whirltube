@@ -53,3 +53,5 @@ form="Mp3" 	# Format for audio extraction. Mp3, Opus, Ogg, etc.
 * **1.1.0**
    * Added support for changing resolution, audio format and subtitle language.
    * Added default setting information.
+* **1.1.1**
+  * Fixed inconsistent UI.
