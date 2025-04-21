@@ -37,7 +37,7 @@ Open wt.sh in a text editor to change.
 
 ```bash
 sub=0		# 1 = download subtitles of specified language
-lang="en" 	# Subtitle language
+lang="en-en"    # Subtitle language(s)
 res=720 	# Default resolution. 480, 720, 1080, etc.
 form="Mp3" 	# Format for audio extraction. Mp3, Opus, M4a, etc.
 cookies=0	# 1 = import browser cookies for login-gated content
