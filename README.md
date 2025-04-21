@@ -2,7 +2,7 @@
 
 Simple bash interface for interacting with [yt-dlp](https://github.com/yt-dlp/yt-dlp). Also requires [ffmpeg](https://github.com/FFmpeg/FFmpeg) and optionally [vlc](https://github.com/videolan/vlc) to enable streaming.
 
-![screenshpt](https://imgur.com/YoAlePt.png)
+![screenshpt](https://imgur.com/xupyngE.png)
 
 ### Use
 
@@ -12,7 +12,7 @@ Download wt.sh from the web interface or with
 wget https://raw.githubusercontent.com/mbluelander/whirltube/refs/heads/main/wt.sh
 ```
 
-If you would like to be able to run the program from anywhere, place wt.sh in one of your system's "PATH" folders. An example on Debian would be `/home/[username]/.local/bin/`. For a list of folders in your system's PATH, open a command line and type `echo $PATH`. 
+If you would like to be able to run the program from anywhere, place wt.sh in one of your system's "PATH" folders. For a list of folders in your system's PATH, open a command line and type `echo $PATH`. 
 
 >[!NOTE]
 >wt.sh must be in the same folder as yt-dlp, or yt-dlp must be in your system's `$PATH` to use whirltube.
@@ -21,7 +21,9 @@ Make the program executable with `chmod +x wt.sh`. If you placed wt.sh in a path
 
 Option 4 toggles downloading of subtitles. To set this option to always on, change the default settings.
 
-Options 5 and 6 will cycle through some basic options for video resolution and audio format. This can be overridden by changing the default settings.
+Option 5 toggles the importing of browser cookies for obtaining login-gated content. This will default to firefox, which can be changed in the default settings (see below.)
+
+Options 6 and 7 will cycle through some basic options for video resolution and audio format. This can be overridden by changing the default settings.
 
 ```
 wt.sh [url]
@@ -34,10 +36,12 @@ Will skip the menu and immediately download the media at [url] with the default 
 Open wt.sh in a text editor to change.
 
 ```bash
-sub=0		# 1 to download subtitles, 0 to leave off
+sub=0		# 1 = download subtitles of specified language
 lang="en" 	# Subtitle language
 res=720 	# Default resolution. 480, 720, 1080, etc.
-form="Mp3" 	# Format for audio extraction. Mp3, Opus, Ogg, etc.
+form="Mp3" 	# Format for audio extraction. Mp3, Opus, M4a, etc.
+cookies=0	# 1 = import browser cookies for login-gated content
+bsr="firefox"	# Browser from which to allow cookies	
 ```
 
 
@@ -55,3 +59,7 @@ form="Mp3" 	# Format for audio extraction. Mp3, Opus, Ogg, etc.
    * Added default setting information.
 * **1.1.1**
   * Fixed inconsistent UI.
+* **1.1.2**
+  * Added option to import browser cookies.
+  * Replaced Ogg in default audio formats with M4a
+ 
