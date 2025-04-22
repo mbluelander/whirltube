@@ -2,7 +2,7 @@
 
 Simple bash interface for interacting with [yt-dlp](https://github.com/yt-dlp/yt-dlp). Also requires [ffmpeg](https://github.com/FFmpeg/FFmpeg) and optionally [vlc](https://github.com/videolan/vlc) to enable streaming.
 
-![screenshpt](https://imgur.com/f2z4ILu.png)
+![screenshot](https://imgur.com/f2z4ILu.png)
 
 ### Use
 
