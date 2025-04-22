@@ -2,7 +2,7 @@
 
 Simple bash interface for interacting with [yt-dlp](https://github.com/yt-dlp/yt-dlp). Also requires [ffmpeg](https://github.com/FFmpeg/FFmpeg) and optionally [vlc](https://github.com/videolan/vlc) to enable streaming.
 
-![screenshpt](https://imgur.com/xupyngE.png)
+![screenshpt](https://imgur.com/f2z4ILu.png)
 
 ### Use
 
@@ -61,5 +61,8 @@ bsr="firefox"	# Browser from which to allow cookies
   * Fixed inconsistent UI.
 * **1.1.2**
   * Added option to import browser cookies.
-  * Replaced Ogg in default audio formats with M4a
+  * Replaced Ogg in default audio formats with M4a.
+* **1.1.3**
+  * Whirltube will now embed chapter metadata into downloaded video if available.
+  * Added attractive unicode icon.
  
