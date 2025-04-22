@@ -47,22 +47,22 @@ bsr="firefox"	# Browser from which to allow cookies
 
 ### Changes
 
-* **1.0.1**
-  * Whirltube will now download any available english subtitles for video.
-* **1.0.3**
-  * Downloading subtitles is now a configurable setting.
-  * Launching whirltube with a URL will now automatically start yt-dlp with the default download settings.
-* **1.0.4**
-   * Fixed bug with wrong equality symbol.
-* **1.1.0**
-   * Added support for changing resolution, audio format and subtitle language.
-   * Added default setting information.
-* **1.1.1**
-  * Fixed inconsistent UI.
-* **1.1.2**
-  * Added option to import browser cookies.
-  * Replaced Ogg in default audio formats with M4a.
 * **1.1.3**
   * Whirltube will now embed chapter metadata into downloaded video if available.
   * Added attractive unicode icon.
- 
+* **1.1.2**
+  * Added option to import browser cookies.
+  * Replaced Ogg in default audio formats with M4a.
+* **1.1.1**
+  * Fixed inconsistent UI.
+* **1.1.0**
+   * Added support for changing resolution, audio format and subtitle language.
+   * Added default setting information.
+* **1.0.4**
+   * Fixed bug with wrong equality symbol.
+* **1.0.3**
+  * Downloading subtitles is now a configurable setting.
+  * Launching whirltube with a URL will now automatically start yt-dlp with the default download settings.
+
+* **1.0.1**
+  * Whirltube will now download any available english subtitles for video.
