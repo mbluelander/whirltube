@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
-#whirltube 1.1.2
 #requires: yt-dlp, ffmpeg, VLC
+
 #https://github.com/mbluelander/whirltube/
+version="🌀 whirltube 1.1.3"
 
 ### DEFAULT SETTINGS
 sub=0		# 1 = download subtitles of specified language
@@ -27,13 +28,13 @@ if [[ $1 > "" ]]; then
 fi
 while [[ $ans -lt 1 || $ans -gt 6 ]]; do
 	clear
-	echo "whirltube 1.1.2" 
+	echo $version 
 	echo
 	echo " 1. Download video" 
 	echo " 2. Extract audio"
 	echo " 3. Play in VLC"
 	echo -n " 4. Download subtitles? " && echo "${subu[sub]}"
-	echo -n " 5. Allow cookies?      " && echo "${cookiesu[cookies]}"
+	echo -n " 5. Use cookies?        " && echo "${cookiesu[cookies]}"
 	echo -n " 6. Change resolution   [" && echo -n $res && echo "p]"
 	echo -n " 7. Change audio format [" && echo -n $form && echo "]"
 	echo " 9. Exit"
@@ -89,10 +90,10 @@ while [[ $url == "" ]]; do
 done
 if [[ $ans -eq 1 ]]; then
 	if [[ $sub -eq 1 ]]; then
-		yt-dlp $usecookies $url -S vcodec:h264,fps,res:$res,acodec:m4a --write-sub --write-auto-sub --sub-lang "$lang.*"
+		yt-dlp $usecookies $url -S vcodec:h264,fps,res:$res,acodec:m4a --write-sub --write-auto-sub --sub-lang "$lang.*" --embed-chapters
 		exit
 	else
-		yt-dlp $usecookies $url -S vcodec:h264,fps,res:$res,acodec:m4a
+		yt-dlp $usecookies $url -S vcodec:h264,fps,res:$res,acodec:m4a --embed-chapters
 		exit
 	fi
 elif [[ $ans -eq 2 ]]; then 
