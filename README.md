@@ -36,17 +36,25 @@ Will skip the menu and immediately download the media at [url] with the default 
 Open wt.sh in a text editor to change.
 
 ```bash
-sub=0		# 1 = download subtitles of specified language
-lang="en-en"    # Subtitle language(s)
+### DEFAULT SETTINGS ################################################
+sub=1		# 1 = download subtitles of specified language
+lang="en-en" 	# Subtitle language
 res=720 	# Default resolution. 480, 720, 1080, etc.
-form="Mp3" 	# Format for audio extraction. Mp3, Opus, M4a, etc.
+form="mp3" 	# Format for audio extraction. Mp3, Opus, M4a, etc.
 cookies=0	# 1 = import browser cookies for login-gated content
-bsr="firefox"	# Browser from which to allow cookies	
+bsr="firefox"	# Browser from which to allow cookies
+embed=0		# 1 = embed chapter metadata
+### ADVANCED ########################################################
+vc="h264"	# Video codec
+ac="m4a"	# Audio codec
+player="vlc"	# Local video player for streaming
+#####################################################################
 ```
 
 
 ### Changes
-
+* **1.1.4**
+  * Fixed case sensitivity bug. Added advanced default settings.
 * **1.1.3**
   * Whirltube will now embed chapter metadata into downloaded video if available.
   * Added attractive unicode icon.
