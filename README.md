@@ -37,13 +37,13 @@ Open wt.sh in a text editor to change.
 
 ```bash
 ### DEFAULT SETTINGS ################################################
-sub=1		# 1 = download subtitles of specified language
+sub=0		# 1 = download subtitles of specified language
 lang="en-en" 	# Subtitle language
 res=720 	# Default resolution. 480, 720, 1080, etc.
 form="mp3" 	# Format for audio extraction. Mp3, Opus, M4a, etc.
 cookies=0	# 1 = import browser cookies for login-gated content
 bsr="firefox"	# Browser from which to allow cookies
-embed=0		# 1 = embed chapter metadata
+embed=1		# 1 = embed chapter metadata
 ### ADVANCED ########################################################
 vc="h264"	# Video codec
 ac="m4a"	# Audio codec
